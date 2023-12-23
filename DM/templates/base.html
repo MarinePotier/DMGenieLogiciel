@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <h1><center>S'entraîner aux questions des examens<center></h1>
+    <h2><center>des Galops 1 à 7 d'équitation<center></h2>
+
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="/static/base.js"></script>
+</head>
+
+<body>
+    <!-- Page de base (cacher les données)-->
+    <div id="accueil">
+        <input type="button" onclick="afficherToutesLesDonnees()" value="Afficher le tableau des questions et des réponses" />
+    </div>
+
+    <!-- Pour afficher le tableau avec toutes les données-->
+    <div id="affichageTableau" style="display: none;">
+        <input type="button" onclick="retournerPageAccueil()" value="Retourner à la page d'accueil" />
+
+        <table id="tableDonnees" border="1">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Réponse</th>
+                    <th>Galop</th>
+                </tr>
+            </thead>
+            <tbody id="tableau"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
